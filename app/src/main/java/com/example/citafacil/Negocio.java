@@ -10,11 +10,11 @@ public class Negocio extends Usuario{
     private String contrasena;
     private String horario;
 
-    public Negocio(){}
     public Negocio(String id, String nombre, String direccion, String telefono,
                    String descripcion, String email, String contrasena, String horario) {
         super(id, nombre, direccion, telefono, descripcion, email, contrasena, horario);
     }
+
     public String getId(){
         return id;
     }
