@@ -8,12 +8,75 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/Texto1"
+        android:layout_width="343dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="Reserva tus citas de forma fácil y rápida"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <ImageView
+        android:id="@+id/Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/TituloCitaFacil" />
+
+    <ImageView
+        android:id="@+id/ImagenPortada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/Texto1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo"
+        app:srcCompat="@drawable/ImagenPortada" />
+
+    <Button
+        android:id="@+id/BotonIniciarSesion"
+        android:layout_width="245dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:text="Iniciar Sesión"
+        android:textSize="20sp"
+        app:iconSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Texto1" />
+
+    <Button
+        android:id="@+id/botonRegistrarse"
+        android:layout_width="247dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="Registrarse"
+        android:textSize="20sp"
+        app:iconSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BotonIniciarSesion" />
+
+    <TextView
+        android:id="@+id/Texto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Continuar como invitado"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textColorLink="#3F51B5"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="645dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

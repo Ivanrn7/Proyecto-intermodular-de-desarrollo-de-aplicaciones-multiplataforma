@@ -14,8 +14,7 @@ public class Cliente extends Usuario{
         super(id, nombre, apellido, email, contrasena, telefono, direccion);
     }
     public String getId(){
-        return id;
-    }
+        return id;}
     public void setId(String id) {
         this.id = id;
     }
