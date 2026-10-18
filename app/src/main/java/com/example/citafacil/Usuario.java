@@ -15,7 +15,7 @@ public abstract class Usuario {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.correo = email;
+        this.email = email;
         this.contrasena = contrasena;
         this.telefono = telefono;
         this.direccion = direccion;
