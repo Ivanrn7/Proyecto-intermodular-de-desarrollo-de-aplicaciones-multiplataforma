@@ -1,7 +1,8 @@
 package com.example.citafacil;
 
 import java.time.LocalTime;
-
+/*IVAN
+Como hereda de Usuario solamente se añaden atributos propios de esta clase */
 public class Negocio extends Usuario{
     private String cif;
     private String descripcion;
@@ -66,7 +67,7 @@ public class Negocio extends Usuario{
     public void setHoraFin(LocalTime horaFin) {
         this.horaFin = horaFin;
     }
-
+// metodo que permite mostrar toods los atributos en formato texto
     @Override
     public String toString() {
         return "Negocio{" +

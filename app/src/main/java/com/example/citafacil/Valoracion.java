@@ -8,4 +8,3 @@ public class Valoracion {
         private Negocio negocio;
 
     }
-}

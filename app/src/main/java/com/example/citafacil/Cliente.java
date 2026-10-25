@@ -1,7 +1,8 @@
 package com.example.citafacil;
 
 public class Cliente extends Usuario {
-
+    /*IVAN
+    Como hereda de Usuario no hace falta poner atributos por que usa los mismos de quien hereda */
     public Cliente() {
         super();
     }

@@ -8,4 +8,3 @@ public class Notificacion {
         private boolean leida;
 
     }
-}
