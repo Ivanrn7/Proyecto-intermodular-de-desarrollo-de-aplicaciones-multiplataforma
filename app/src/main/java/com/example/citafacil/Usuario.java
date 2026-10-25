@@ -33,7 +33,7 @@ public abstract class Usuario {
         this.rol = rol;
     }
     public String getId(){
-        return id
+        return id;
     }
     public void setId(String id) {
         this.id = id;

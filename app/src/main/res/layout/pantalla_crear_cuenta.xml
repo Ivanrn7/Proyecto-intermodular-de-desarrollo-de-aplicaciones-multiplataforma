@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textTienCuenP3"
+        android:id="@+id/P2_iniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -22,14 +22,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="452dp"
-        app:layout_constraintEnd_toStartOf="@+id/editContraP3"
+        app:layout_constraintEnd_toStartOf="@+id/P1_contrasena"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_lock_idle_lock" />
 
     <EditText
-        android:id="@+id/editConfiContraP3"
+        android:id="@+id/P2_contrasena2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
@@ -39,10 +39,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editCorreoP3" />
+        app:layout_constraintTop_toBottomOf="@+id/P1_correo" />
 
     <EditText
-        android:id="@+id/editUsuP3"
+        android:id="@+id/P2_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -66,7 +66,7 @@
         app:srcCompat="@drawable/citafacillogo" />
 
     <ImageButton
-        android:id="@+id/botonAtrasP3"
+        android:id="@+id/P1_atras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -99,7 +99,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textCrearP3" />
 
     <EditText
-        android:id="@+id/editContraP3"
+        android:id="@+id/P1_contrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -109,10 +109,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editCorreoP3" />
+        app:layout_constraintTop_toBottomOf="@+id/P1_correo" />
 
     <EditText
-        android:id="@+id/editCorreoP3"
+        android:id="@+id/P1_correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
@@ -130,7 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="384dp"
-        app:layout_constraintEnd_toStartOf="@+id/editContraP3"
+        app:layout_constraintEnd_toStartOf="@+id/P1_contrasena"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -142,14 +142,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="304dp"
-        app:layout_constraintEnd_toStartOf="@+id/editCorreoP3"
+        app:layout_constraintEnd_toStartOf="@+id/P1_correo"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
     <Button
-        android:id="@+id/botonCrearP3"
+        android:id="@+id/P1_iniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -159,7 +159,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkPolitP3" />
+        app:layout_constraintTop_toBottomOf="@+id/P2_checkPolitica" />
 
     <ImageView
         android:id="@+id/iconoUsuP3"
@@ -170,14 +170,14 @@
         tools:layout_editor_absoluteY="239dp" />
 
     <CheckBox
-        android:id="@+id/checkPolitP3"
+        android:id="@+id/P2_checkPolitica"
         android:layout_width="266dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:buttonTint="#3F51B5"
         android:text="Acepto los términos y condiciones y la política de privacidad."
         android:textColor="#3F51B5"
-        app:layout_constraintTop_toBottomOf="@+id/editConfiContraP3"
+        app:layout_constraintTop_toBottomOf="@+id/P2_contrasena2"
         tools:layout_editor_absoluteX="61dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
