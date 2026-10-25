@@ -16,11 +16,13 @@ public abstract class Usuario {
     private String contrasena;
     private String telefono;
     private String direccion;
+    private String rol;
+
 
     public Usuario() {
     }
     public Usuario(String id, String nombre, String apellido, String email,
-                   String contrasena, String telefono, String direccion) {
+                   String contrasena, String telefono, String direccion, String rol) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -28,6 +30,7 @@ public abstract class Usuario {
         this.contrasena = contrasena;
         this.telefono = telefono;
         this.direccion = direccion;
+        this.rol = rol;
     }
     public String getId(){
         return id
@@ -35,40 +38,46 @@ public abstract class Usuario {
     public void setId(String id) {
         this.id = id;
     }
-    public string getNombre(){
+    public String getNombre(){
         return nombre;
     }
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public string getApellido(){
+    public String getApellido(){
         return apellido;
     }
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-    public string getEmail(){
+    public String getEmail(){
         return email;
     }
     public void setEmail(String email) {
         this.email = email;
     }
-    public string getContrasena(){
+    public String getContrasena(){
         return contrasena;
     }
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
-    public string getTelefono(){
+    public String getTelefono(){
         return telefono;
     }
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-    public string getDireccion(){
+    public String getDireccion(){
         return direccion;
     }
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+    public String getRol(){
+        return rol;
+    }
+    public void setRol(String rol) {
+        this.rol = rol;
     }
 }

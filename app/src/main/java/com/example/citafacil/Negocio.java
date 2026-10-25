@@ -1,68 +1,84 @@
 package com.example.citafacil;
 
+import java.time.LocalTime;
+/*IVAN
+Como hereda de Usuario solamente se añaden atributos propios de esta clase */
 public class Negocio extends Usuario{
-    private String id;
-    private String nombre;
-    private String direccion;
-    private String telefono;
+    private String cif;
     private String descripcion;
-    private String email;
-    private String contrasena;
-    private String horario;
+    private LocalTime horaInicio;
+    private LocalTime horaFin;
 
-    public Negocio(String id, String nombre, String direccion, String telefono,
-                   String descripcion, String email, String contrasena, String horario) {
-        super(id, nombre, direccion, telefono, descripcion, email, contrasena, horario);
+    public Negocio() { super();}
+    public Negocio(String cif,
+                   String nombre,
+                   String email,
+                   String contrasena,
+                   String telefono,
+                   String direccion,
+                   String descripcion,
+                   LocalTime horaInicio,
+                   LocalTime horaFin) {
+
+        super(
+                cif,           // id
+                nombre,
+                "",    // apellido vacío
+                email,
+                contrasena,
+                telefono,
+                direccion,
+                "NEGOCIO"   // rol fijo
+        );
+        this.cif = cif;
+        this.descripcion = descripcion;
+        this.horaInicio = horaInicio;
+        this.horaFin = horaFin;
     }
 
-    public String getId(){
-        return id;
+
+    public String getCif(){
+        return cif;
     }
-    public void setId(String id) {
-        this.id = id;
+    public void setCif(String cif) {
+        this.cif = cif;
+        setId(cif);
     }
-    public string getNombre(){
-        return nombre;
-    }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-    public string getDireccion(){
-        return direccion;
-    }
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-    public string getTelefono(){
-        return telefono;
-    }
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-    public string getDescripcion(){
+    public String getDescripcion() {
         return descripcion;
     }
+
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    public string getEmail(){
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
-    }
-    public string getContrasena(){
-        return contrasena;
-    }
-    public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
-    }
-    public string getHorario(){
-        return horario;
-    }
-    public void setHorario(String horario) {
-        this.horario = horario;
+
+    public LocalTime getHoraInicio() {
+        return horaInicio;
     }
 
+    public void setHoraInicio(LocalTime horaInicio) {
+        this.horaInicio = horaInicio;
+    }
 
+    public LocalTime getHoraFin() {
+        return horaFin;
+    }
+
+    public void setHoraFin(LocalTime horaFin) {
+        this.horaFin = horaFin;
+    }
+// metodo que permite mostrar toods los atributos en formato texto
+    @Override
+    public String toString() {
+        return "Negocio{" +
+                "cif='" + cif + '\'' +
+                ", nombre='" + getNombre() + '\'' +
+                ", direccion='" + getDireccion() + '\'' +
+                ", telefono='" + getTelefono() + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", email='" + getEmail() + '\'' +
+                ", horaInicio=" + horaInicio +
+                ", horaFin=" + horaFin +
+                '}';
+    }
 }
