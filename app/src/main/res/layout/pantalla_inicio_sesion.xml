@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/logoAppP2"
+        android:id="@+id/logoAppP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -28,20 +28,20 @@
         app:srcCompat="@drawable/citafacillogo" />
 
     <ImageButton
-        android:id="@+id/botonAtrasP2"
+        android:id="@+id/botonAtrasP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#03A9F4"
-        app:layout_constraintEnd_toStartOf="@+id/logoAppP2"
+        app:layout_constraintEnd_toStartOf="@+id/logoAppP3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <TextView
-        android:id="@+id/textInicioP2"
+        android:id="@+id/textCrearP3"
         android:layout_width="216dp"
         android:layout_height="41dp"
         android:layout_marginTop="150dp"
@@ -52,16 +52,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textAccedeP2"
+        android:id="@+id/textUneteP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Accede a tu cuenta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInicioP2" />
+        app:layout_constraintTop_toBottomOf="@+id/textCrearP3" />
 
     <EditText
-        android:id="@+id/editContraP2"
+        android:id="@+id/editContraP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -70,10 +70,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editCorreoP2" />
+        app:layout_constraintTop_toBottomOf="@+id/editCorreoP3" />
 
     <EditText
-        android:id="@+id/editCorreoP2"
+        android:id="@+id/editCorreoP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -82,32 +82,32 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textAccedeP2" />
+        app:layout_constraintTop_toBottomOf="@+id/textUneteP3" />
 
     <ImageView
-        android:id="@+id/imagCorreoP2"
+        android:id="@+id/imagCorreoP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="255dp"
-        app:layout_constraintEnd_toStartOf="@+id/editCorreoP2"
+        app:layout_constraintEnd_toStartOf="@+id/editCorreoP3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
     <ImageView
-        android:id="@+id/imagCnadadoP2"
+        android:id="@+id/imagCandadoP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="333dp"
-        app:layout_constraintEnd_toStartOf="@+id/editContraP2"
+        app:layout_constraintEnd_toStartOf="@+id/editContraP3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_lock_idle_lock" />
 
     <Button
-        android:id="@+id/botonInicioP2"
+        android:id="@+id/botonCrearP3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -116,7 +116,7 @@
         android:textColorLink="#03A9F4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editContraP2" />
+        app:layout_constraintTop_toBottomOf="@+id/editContraP3" />
 
     <TextView
         android:id="@+id/textContP2"
@@ -127,6 +127,6 @@
         android:textColor="#3F51B5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonInicioP2" />
+        app:layout_constraintTop_toBottomOf="@+id/botonCrearP3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
