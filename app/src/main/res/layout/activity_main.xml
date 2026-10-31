@@ -31,7 +31,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/TituloCitaFacil" />
+        app:srcCompat="@drawable/titulocitafacil" />
 
     <ImageView
         android:id="@+id/ImagenPortada"
@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Titulo"
-        app:srcCompat="@drawable/ImagenPortada" />
+        app:srcCompat="@drawable/imagen_portada" />
 
     <Button
         android:id="@+id/BotonIniciarSesion"
