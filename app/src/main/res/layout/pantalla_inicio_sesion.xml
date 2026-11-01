@@ -70,10 +70,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/P2_TextoCorreo" />
+        app:layout_constraintTop_toBottomOf="@+id/P1_TextoCorreo" />
 
     <EditText
-        android:id="@+id/P2_TextoCorreo"
+        android:id="@+id/P1_TextoCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="255dp"
-        app:layout_constraintEnd_toStartOf="@+id/P2_TextoCorreo"
+        app:layout_constraintEnd_toStartOf="@+id/P1_TextoCorreo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_dialog_email" />
@@ -107,7 +107,7 @@
         app:srcCompat="@android:drawable/ic_lock_idle_lock" />
 
     <Button
-        android:id="@+id/P2_BotonIniciar"
+        android:id="@+id/P1_BotonIniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#03A9F4"
@@ -128,6 +128,6 @@
         android:textColor="#3F51B5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/P2_BotonIniciar" />
+        app:layout_constraintTop_toBottomOf="@+id/P1_BotonIniciar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
