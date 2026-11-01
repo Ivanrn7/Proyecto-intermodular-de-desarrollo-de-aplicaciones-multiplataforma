@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         registro = findViewById(R.id.main_registro);
-        iniciar = findViewById(R.id.main_iniciar);
+        iniciar = findViewById(R.id.main_botonIniciar);
 
        registro.setOnClickListener(new View.OnClickListener() {
             @Override
