@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/botonCrearP4"
+        android:id="@+id/P6_BotonVolver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -21,7 +21,7 @@
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/botonCrearP2"
+        android:id="@+id/P6_BotonConfirmar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -138,7 +138,7 @@
         app:srcCompat="@drawable/logo_peluqueria" />
 
     <ImageButton
-        android:id="@+id/botonAtrasP4"
+        android:id="@+id/P6_BotonAtras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
