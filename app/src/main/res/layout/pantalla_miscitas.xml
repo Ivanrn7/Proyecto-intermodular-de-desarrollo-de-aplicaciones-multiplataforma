@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
     <Button
-        android:id="@+id/botonCrearP11"
+        android:id="@+id/P8_BotonDetalles2"
         android:layout_width="143dp"
         android:layout_height="49dp"
         android:layout_marginStart="24dp"
@@ -45,7 +45,7 @@
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/botonCrearP10"
+        android:id="@+id/P8_BotonCancelar1"
         android:layout_width="143dp"
         android:layout_height="49dp"
         android:layout_marginStart="24dp"
@@ -55,12 +55,12 @@
         android:textColor="#F44336"
         android:textColorLink="#F44336"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonCrearP9"
+        app:layout_constraintTop_toBottomOf="@+id/P8_BotonDetalles1"
         app:strokeColor="#F44336"
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/botonCrearP12"
+        android:id="@+id/P8_BotonCancelar2"
         android:layout_width="143dp"
         android:layout_height="49dp"
         android:layout_marginStart="24dp"
@@ -70,12 +70,12 @@
         android:textColor="#F44336"
         android:textColorLink="#F44336"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonCrearP11"
+        app:layout_constraintTop_toBottomOf="@+id/P8_BotonDetalles2"
         app:strokeColor="#F44336"
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/botonCrearP9"
+        android:id="@+id/P8_BotonDetalles1"
         android:layout_width="143dp"
         android:layout_height="49dp"
         android:layout_marginStart="24dp"
@@ -90,7 +90,7 @@
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/botonCrearP7"
+        android:id="@+id/P8_BotonCitas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -102,7 +102,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/botonCrearP8"
+        android:id="@+id/P8_BotonInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -117,7 +117,7 @@
         app:strokeWidth="2dp" />
 
     <ImageButton
-        android:id="@+id/botonAtrasP6"
+        android:id="@+id/P8_BotonVolver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -149,7 +149,7 @@
         android:text="Mis citas"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonAtrasP6" />
+        app:layout_constraintTop_toBottomOf="@+id/P8_BotonVolver" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -168,7 +168,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonCrearP10"
+        app:layout_constraintTop_toBottomOf="@+id/P8_BotonCancelar1"
         app:srcCompat="@drawable/foto_negocio" />
 
     <TextView
