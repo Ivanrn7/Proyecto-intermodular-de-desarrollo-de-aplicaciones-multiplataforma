@@ -89,7 +89,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/P7_ImagenLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
