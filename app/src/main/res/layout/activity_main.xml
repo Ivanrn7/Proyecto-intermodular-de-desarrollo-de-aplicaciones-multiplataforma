@@ -31,7 +31,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/titulocitafacil" />
+        app:srcCompat="@drawable/TituloCitaFacil" />
 
     <ImageView
         android:id="@+id/ImagenPortada"
@@ -41,10 +41,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Titulo"
-        app:srcCompat="@drawable/imagenportada" />
+        app:srcCompat="@drawable/ImagenPortada" />
 
     <Button
-        android:id="@+id/main_iniciar"
+        android:id="@+id/BotonIniciarSesion"
         android:layout_width="245dp"
         android:layout_height="46dp"
         android:layout_marginTop="32dp"
@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Texto1" />
 
     <Button
-        android:id="@+id/main_registro"
+        android:id="@+id/botonRegistrarse"
         android:layout_width="247dp"
         android:layout_height="47dp"
         android:layout_marginTop="16dp"
@@ -66,7 +66,7 @@
         app:iconSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_iniciar" />
+        app:layout_constraintTop_toBottomOf="@+id/BotonIniciarSesion" />
 
     <TextView
         android:id="@+id/Texto2"
