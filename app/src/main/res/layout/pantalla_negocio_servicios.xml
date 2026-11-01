@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageButton
-        android:id="@+id/botonAtrasP"
+        android:id="@+id/P4_BotonAtras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -19,7 +19,7 @@
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/P4_Listado"
         android:layout_width="409dp"
         android:layout_height="253dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,7 +41,7 @@
         android:layout_height="228dp"
         android:layout_marginBottom="4dp"
         android:background="#BEFFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintBottom_toTopOf="@+id/P4_Listado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -55,7 +55,7 @@
     </FrameLayout>
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/P4_TextoServicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -63,7 +63,7 @@
         android:text="SERVICIOS"
         android:textColor="#3F51B5"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintBottom_toTopOf="@+id/P4_Listado"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -75,11 +75,11 @@
         android:text="INFORMACION"
         android:textColor="#3F51B5"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/listView"
-        app:layout_constraintStart_toEndOf="@+id/textView15" />
+        app:layout_constraintBottom_toTopOf="@+id/P4_Listado"
+        app:layout_constraintStart_toEndOf="@+id/P4_TextoServicio" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/P4_TextoOpciones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -87,7 +87,7 @@
         android:text="OPCIONES"
         android:textColor="#3F51B5"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintBottom_toTopOf="@+id/P4_Listado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toEndOf="@+id/textView16" />
