@@ -76,7 +76,8 @@
         android:text="Continuar como invitado"
         android:textColor="@color/design_default_color_primary_variant"
         android:textColorLink="#3F51B5"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="645dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="647dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
