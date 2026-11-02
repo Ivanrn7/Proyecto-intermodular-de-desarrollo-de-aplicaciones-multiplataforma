@@ -44,6 +44,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             throws ServletException, IOException {
 
         String authorization = request.getHeader("Authorization");
+        System.out.println("JWT FILTER: " +
+                (authorization == null ? "SIN TOKEN" :
+                        authorization.startsWith("Bearer ")
+                                ? "TOKEN BEARER RECIBIDO"
+                                : "CABECERA INCORRECTA"));
 
         if (authorization == null
                 || !authorization.startsWith("Bearer ")) {
@@ -76,6 +81,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
                 SecurityContextHolder.getContext()
                         .setAuthentication(authentication);
+                System.out.println(
+                        "JWT FILTER: AUTENTICADO COMO " + email);
             }
 
         } catch (io.jsonwebtoken.JwtException
@@ -89,5 +96,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         }
 
         filterChain.doFilter(request, response);
+        System.out.println(
+                "JWT FILTER: CONTINUANDO CON LA PETICIÓN");
     }
 }

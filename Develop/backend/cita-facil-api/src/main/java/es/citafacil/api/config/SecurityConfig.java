@@ -55,11 +55,16 @@ public class SecurityConfig {
                                 "/api/usuarios/registro",
                                 "/api/usuarios/login"
                         ).permitAll()
+                        .requestMatchers(
+                                HttpMethod.GET,
+                                "/api/negocios/*/servicios"
+                        ).permitAll()
+                        .requestMatchers("/error").permitAll()
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(
-                        jwtAuthenticationFilter,
-                        UsernamePasswordAuthenticationFilter.class
+                                jwtAuthenticationFilter,
+                                UsernamePasswordAuthenticationFilter.class
                 );
 
         return http.build();

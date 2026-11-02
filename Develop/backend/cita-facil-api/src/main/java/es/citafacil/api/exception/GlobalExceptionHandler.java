@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.util.Map;
 import java.util.stream.Collectors;
+import es.citafacil.api.exception.ReservaSolapadaException;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
@@ -37,4 +38,23 @@ public class GlobalExceptionHandler {
                 .badRequest()
                 .body(Map.of("error", errores));
     }
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<Map<String, String>> manejarArgumentoInvalido(
+            IllegalArgumentException exception) {
+
+        return ResponseEntity
+                .status(HttpStatus.BAD_REQUEST)
+                .body(Map.of("error", exception.getMessage()));
+    }
+
+
+    @ExceptionHandler(ReservaSolapadaException.class)
+    public ResponseEntity<Map<String, String>> manejarReservaSolapada(
+            ReservaSolapadaException exception) {
+
+        return ResponseEntity
+                .status(HttpStatus.CONFLICT)
+                .body(Map.of("error", exception.getMessage()));
+    }
+
 }
