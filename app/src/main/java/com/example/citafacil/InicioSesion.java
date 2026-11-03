@@ -1,3 +1,4 @@
+
 package com.example.citafacil;
 
 import android.content.Intent;
@@ -7,51 +8,49 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class InicioSesion extends AppCompatActivity {
 
-private EditText Correo;
-private EditText Contrasena;
-private ImageButton Atras;
-private Button Iniciar;
-private TextView Registrar;
+    // Componentes de la interfaz
+    private EditText P1_TextoCorreo;
+    private EditText P1_Contrasena;
+    private ImageButton P1_Atras;
+    private Button P1_BotonIniciar;
+    private TextView P1_TextoRegistrar;
 
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    EdgeToEdge.enable(this);
-    setContentView(R.layout.pantalla_inicio_sesion);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-    Correo = findViewById(R.id.P1_TextoCorreo);
-    Contrasena = findViewById(R.id.P1_TextoContrasena);
-    Atras = findViewById(R.id.P1_BotonAtras);
-    Iniciar = findViewById(R.id.P1_BotonIniciar);
-    Registrar = findViewById(R.id.P1_TextoRegistrar);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.pantalla_inicio_sesion);
 
+        // Referencias a los elementos XML
+        P1_TextoCorreo = findViewById(R.id.P1_TextoCorreo);
+        P1_Contrasena = findViewById(R.id.P1_TextoContrasena);
+        P1_Atras = findViewById(R.id.P1_BotonAtras);
+        P1_BotonIniciar = findViewById(R.id.P1_BotonIniciar);
+        P1_TextoRegistrar = findViewById(R.id.P1_TextoRegistrar);
 
-    Atras.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
+        // Volver a la pantalla anterior
+        P1_Atras.setOnClickListener(v -> {
             Intent intent = new Intent(InicioSesion.this, MainActivity.class);
             startActivity(intent);
-        }
-    });
+        });
 
-    Iniciar.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
+        // Iniciar sesión
+        P1_BotonIniciar.setOnClickListener(v -> {
             Intent intent = new Intent(InicioSesion.this, PantallaPrincipal.class);
             startActivity(intent);
-        }
-    });
-    Registrar.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
+        });
+
+        // Ir a crear cuenta
+        P1_TextoRegistrar.setOnClickListener(v -> {
             Intent intent = new Intent(InicioSesion.this, CrearCuenta.class);
             startActivity(intent);
-        }
-    });
-}
+        });
+    }
 }
