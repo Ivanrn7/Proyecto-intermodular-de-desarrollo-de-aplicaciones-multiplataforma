@@ -1,177 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
+    <!-- CABECERA -->
     <ImageButton
         android:id="@+id/P2_BotonAtras"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#03A9F4"
-        app:layout_constraintEnd_toStartOf="@+id/logoAppP3"
+        android:contentDescription="Volver"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_revert"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
-
-    <TextView
-        android:id="@+id/P2_TextoIniciar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="¿Ya tienes cuenta? Inicia sesión"
-        android:textColor="#3F51B5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imagCandado2P3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="452dp"
-        app:layout_constraintEnd_toStartOf="@+id/P2_TextoContrasena"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
-
-    <EditText
-        android:id="@+id/P2_TextoContrasena2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Confirmar contraseña"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/P2_TextoContrasena" />
-
-    <EditText
-        android:id="@+id/P2_TextoNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="Nombre de usuario"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textUneteP3" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/logoAppP3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/citafacillogo" />
-
-    <TextView
-        android:id="@+id/textCrearP3"
-        android:layout_width="216dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="150dp"
-        android:text="Crear Cuenta"
-        android:textSize="34sp"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Logo CitaFácil"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/citafacillogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textUneteP3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Unete a la comunidad de CitasFácil"
-        app:layout_constraintEnd_toEndOf="parent"
+    <!-- CONTENIDO DESPLAZABLE -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/logoAppP3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCrearP3" />
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <ImageView
-        android:id="@+id/imagCandadoP3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="384dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingTop="22dp"
+            android:paddingBottom="28dp">
 
-    <EditText
-        android:id="@+id/P2_TextoContrasena"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
-        app:layout_constraintStart_toEndOf="@+id/imagCandadoP3"
-        tools:layout_editor_absoluteY="381dp" />
+            <!-- TÍTULO -->
+            <TextView
+                android:id="@+id/textCrearP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crear cuenta"
+                android:textColor="#111111"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center" />
 
-    <ImageView
-        android:id="@+id/imagCorreoP3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="304dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+            <!-- SUBTÍTULO -->
+            <TextView
+                android:id="@+id/textUneteP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Únete a la comunidad de"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:gravity="center" />
 
-    <ImageView
-        android:id="@+id/iconoUsuP3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/icono_usuario"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="239dp" />
+            <!-- NOMBRE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="66dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-    <CheckBox
-        android:id="@+id/P2_check"
-        android:layout_width="266dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="44dp"
-        android:buttonTint="#3F51B5"
-        android:text="Acepto los términos y condiciones y la política de privacidad."
-        android:textColor="#3F51B5"
-        app:layout_constraintTop_toBottomOf="@+id/P2_TextoContrasena2"
-        tools:layout_editor_absoluteX="60dp" />
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="Usuario"
+                    android:src="@drawable/icono_usuario"
+                    android:scaleType="fitCenter" />
 
-    <EditText
-        android:id="@+id/P2_TextoCorreo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Correo Electronico"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/P2_TextoContrasena"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
-        app:layout_constraintStart_toEndOf="@+id/imagCorreoP3"
-        app:layout_constraintTop_toBottomOf="@+id/P2_TextoNombre"
-        app:layout_constraintVertical_bias="0.384" />
+                <EditText
+                    android:id="@+id/P2_TextoNombre"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_input_citafacil"
+                    android:hint="Nombre completo"
+                    android:inputType="textCapWords"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="#222222"
+                    android:textColorHint="#AAAAAA"
+                    android:textSize="14sp"
+                    android:singleLine="true" />
 
-    <Button
-        android:id="@+id/P2_BotonCrearCuenta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/design_default_color_primary_dark"
-        android:text="Crear Cuenta"
-        app:layout_constraintBottom_toTopOf="@+id/P2_TextoIniciar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/P2_check" />
+            </LinearLayout>
+
+            <!-- CORREO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="Correo electrónico"
+                    android:src="@android:drawable/ic_dialog_email"
+                    android:scaleType="fitCenter" />
+
+                <EditText
+                    android:id="@+id/P2_TextoCorreo"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_input_citafacil"
+                    android:hint="Correo electrónico"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="#222222"
+                    android:textColorHint="#AAAAAA"
+                    android:textSize="14sp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <!-- CONTRASEÑA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="Contraseña"
+                    android:src="@android:drawable/ic_lock_lock"
+                    android:scaleType="fitCenter" />
+
+                <EditText
+                    android:id="@+id/P2_TextoContrasena"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_input_citafacil"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="#222222"
+                    android:textColorHint="#AAAAAA"
+                    android:textSize="14sp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <!-- CONFIRMAR CONTRASEÑA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="Confirmar contraseña"
+                    android:src="@android:drawable/ic_lock_lock"
+                    android:scaleType="fitCenter" />
+
+                <EditText
+                    android:id="@+id/P2_TextoContrasena2"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_input_citafacil"
+                    android:hint="Confirmar contraseña"
+                    android:inputType="textPassword"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="#222222"
+                    android:textColorHint="#AAAAAA"
+                    android:textSize="14sp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <!-- TÉRMINOS Y CONDICIONES -->
+            <CheckBox
+                android:id="@+id/P2_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:buttonTint="#514BFF"
+                android:gravity="center_vertical"
+                android:text="Acepto los términos y condiciones y la política de privacidad"
+                android:textColor="#1717A8"
+                android:textSize="13sp"
+                android:padding="2dp" />
+
+            <!-- BOTÓN REGISTRO -->
+            <Button
+                android:id="@+id/P2_BotonCrearCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/bg_boton_citafacil"
+                android:backgroundTint="@null"
+                android:elevation="2dp"
+                android:text="Crear cuenta"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- ENLACE INICIAR SESIÓN -->
+            <TextView
+                android:id="@+id/P2_TextoIniciar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:gravity="center"
+                android:text="¿Ya tienes cuenta? Inicia sesión"
+                android:textColor="#1717A8"
+                android:textSize="13sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
