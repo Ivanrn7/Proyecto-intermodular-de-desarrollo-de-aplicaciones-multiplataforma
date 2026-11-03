@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        registro = findViewById(R.id.main_registro);
-        iniciar = findViewById(R.id.main_botonIniciar);
+        registro = findViewById(R.id.main_BotonRegistrarse);
+        iniciar = findViewById(R.id.Main_BotonIniciar);
 
        registro.setOnClickListener(new View.OnClickListener() {
             @Override

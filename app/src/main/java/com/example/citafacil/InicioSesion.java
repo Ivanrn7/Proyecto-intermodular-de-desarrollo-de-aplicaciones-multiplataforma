@@ -1,6 +1,5 @@
 package com.example.citafacil;
 
-import static androidx.core.content.ContextCompat.startActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,20 +12,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class InicioSesion extends AppCompatActivity {
 
-}
-private EditText P1_TextoCorreo;
-private EditText P1_Contraseña;
-private ImageButton P1_Atras;
-private Button P1_BotonIniciar;
-private TextView P1_TextoRegistrar;
+private EditText Correo;
+private EditText Contrasena;
+private ImageButton Atras;
+private Button Iniciar;
+private TextView Registrar;
 
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     EdgeToEdge.enable(this);
-    setContentView(R.layout.activity_main);
+    setContentView(R.layout.pantalla_inicio_sesion);
 
-    TextoCorreo = findViewById(R.id.P1_TextoCorreo);
+    Correo = findViewById(R.id.P1_TextoCorreo);
     Contrasena = findViewById(R.id.P1_TextoContrasena);
     Atras = findViewById(R.id.P1_BotonAtras);
     Iniciar = findViewById(R.id.P1_BotonIniciar);
@@ -55,5 +53,5 @@ protected void onCreate(Bundle savedInstanceState) {
             startActivity(intent);
         }
     });
-
+}
 }
