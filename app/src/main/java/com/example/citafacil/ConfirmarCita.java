@@ -28,7 +28,7 @@ public class ConfirmarCita extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Vuelve a la pantalla de horario y fecha
-                Intent intent = new Intent(ConfirmarCita.this, NegocioHorayFecha.class);
+                Intent intent = new Intent(ConfirmarCita.this, NegocioHoraYFecha.class);
                 // Opcional: limpiar la pila para que vuelva ordenadamente
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
