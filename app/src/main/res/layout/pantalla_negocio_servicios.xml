@@ -27,7 +27,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/P4_ImagenNegocio"
         android:layout_width="449dp"
         android:layout_height="409dp"
         android:layout_marginTop="68dp"
@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/P4_TextoNombreNegocio"
             android:layout_width="361dp"
             android:layout_height="66dp"
             android:text="PELUQUERIA ATMOSPHERE"
@@ -67,7 +67,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/P4_TextoInformacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -90,6 +90,6 @@
         app:layout_constraintBottom_toTopOf="@+id/P4_Listado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.619"
-        app:layout_constraintStart_toEndOf="@+id/textView16" />
+        app:layout_constraintStart_toEndOf="@+id/P4_TextoInformacion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

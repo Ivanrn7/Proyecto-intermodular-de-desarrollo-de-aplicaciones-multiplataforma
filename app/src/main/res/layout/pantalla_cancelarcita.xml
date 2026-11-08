@@ -6,100 +6,266 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/botonCrearP2"
+        android:id="@+id/P9_BotonReprogramar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Reprogramar"
+        android:textColor="#03A9F4"
+        android:textColorLink="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="#03A9F4"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/P9_TextoEstadoValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="#4CAF50"
+        android:text="Confirmado"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/P9_ImagenServicio"
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoEstado" />
+
+    <Button
+        android:id="@+id/P9_BotonCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#FFFFFF"
         android:text="Cancelar"
         android:textColor="#F44336"
         android:textColorLink="#F44336"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="#F44336"
         app:strokeWidth="2dp" />
 
-    <Button
-        android:id="@+id/botonCrearP3"
+    <TextView
+        android:id="@+id/P9_TextoLocalizacionValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="volver"
-        android:textColor="#03A9F4"
-        android:textColorLink="#03A9F4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="#03A9F4"
-        app:strokeWidth="2dp" />
+        android:layout_marginStart="24dp"
+        android:text="aqui va la localizacion"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toEndOf="@+id/P9_IconoLocalizacion"
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoLocalizacion" />
+
+    <TextView
+        android:id="@+id/P9_TextoLocalizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Localizacion"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/P9_IconoLocalizacion"
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoPrecioValor" />
+
+    <TextView
+        android:id="@+id/P9_TextoPrecioValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="aqui va el precio"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toEndOf="@+id/P9_IconoPrecio"
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoPrecio" />
+
+    <TextView
+        android:id="@+id/P9_TextoPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Precio"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/P9_IconoPrecio"
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoHoraValor" />
+
+    <TextView
+        android:id="@+id/P9_TextoHoraValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="aqui va la hora"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toEndOf="@+id/P9_IconoHora"
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoHora" />
+
+    <TextView
+        android:id="@+id/P9_TextoHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Hora"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/P9_IconoHora"
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoFechaValor" />
+
+    <TextView
+        android:id="@+id/P9_TextoFechaValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="aqui va la fecha"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toEndOf="@+id/P9_IconoFecha"
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoFecha" />
+
+    <TextView
+        android:id="@+id/P9_TextoFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Fecha"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/P9_IconoFecha"
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoServicioValor" />
+
+    <TextView
+        android:id="@+id/P9_TextoServicioValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="aqui va el tratamiento"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toEndOf="@+id/P9_IconoServicio"
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoServicio" />
 
     <ImageButton
-        android:id="@+id/p5_BotonAtras"
+        android:id="@+id/P9_BotonAtras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#03A9F4"
-        app:layout_constraintEnd_toStartOf="@+id/logoAppP3"
+        app:layout_constraintEnd_toStartOf="@+id/logoAppP9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/logoAppP9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imagen_cancelar" />
+        app:srcCompat="@drawable/citafacillogo" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/P9_TextoTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Cancelar cita"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Detalle cita"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+        app:layout_constraintTop_toBottomOf="@+id/logoAppP9" />
 
     <TextView
-        android:id="@+id/textView36"
+        android:id="@+id/P9_TextoNombreServicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="¿Seguro que quieres cancelar esta cita?"
+        android:text="Tratamiento facial"
         android:textColor="#3F51B5"
-        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoTitulo" />
 
     <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
+        android:id="@+id/P9_ImagenServicio"
+        android:layout_width="204dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView36"
-        app:srcCompat="@drawable/imagen_alarma" />
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoNombreServicio"
+        app:srcCompat="@drawable/imagen_tratamiento" />
 
     <TextView
-        android:id="@+id/textView37"
-        android:layout_width="234dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="45dp"
-        android:text="Esta accion no se puede deshacer"
-        android:textColor="#F44336"
+        android:id="@+id/P9_TextoServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Servicio"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+        app:layout_constraintStart_toEndOf="@+id/P9_IconoServicio"
+        app:layout_constraintTop_toBottomOf="@+id/P9_ImagenServicio" />
+
+    <ImageView
+        android:id="@+id/P9_IconoServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P9_ImagenServicio"
+        app:srcCompat="@drawable/icono_servicio" />
+
+    <ImageView
+        android:id="@+id/P9_IconoFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P9_IconoServicio"
+        app:srcCompat="@drawable/calendar_icon" />
+
+    <ImageView
+        android:id="@+id/P9_IconoHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P9_IconoFecha"
+        app:srcCompat="@drawable/icono_reloj" />
+
+    <ImageView
+        android:id="@+id/P9_IconoPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P9_IconoHora"
+        app:srcCompat="@drawable/icono_precio" />
+
+    <ImageView
+        android:id="@+id/P9_IconoLocalizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P9_IconoPrecio"
+        app:srcCompat="@drawable/location_icon" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/P9_Mapa"
+        android:layout_width="234dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P9_TextoLocalizacionValor" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

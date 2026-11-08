@@ -41,7 +41,7 @@
         app:srcCompat="@drawable/campana_notif" />
 
     <ImageView
-        android:id="@+id/P3_Lupa"
+        android:id="@+id/P3_Ubicacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -57,11 +57,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Aqui va la localicazion"
-        app:layout_constraintStart_toEndOf="@+id/P3_Lupa"
+        app:layout_constraintStart_toEndOf="@+id/P3_Ubicacion"
         app:layout_constraintTop_toBottomOf="@+id/logoAppP4" />
 
     <ImageButton
-        android:id="@+id/iconLupaP4"
+        android:id="@+id/P3_Ubicacion"
         android:layout_width="44dp"
         android:layout_height="38dp"
         android:layout_marginStart="24dp"

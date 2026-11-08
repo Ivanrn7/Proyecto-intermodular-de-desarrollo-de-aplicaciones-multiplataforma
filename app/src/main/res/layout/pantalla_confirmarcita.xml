@@ -33,108 +33,108 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/P6_TextoLocalizacionValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="aqui va la localizacion"
         android:textColor="#3F51B5"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintStart_toEndOf="@+id/P6_IconoLocalizacion"
+        app:layout_constraintTop_toBottomOf="@+id/P6_TextoLocalizacion" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/P6_TextoLocalizacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:text="Localizacion"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        app:layout_constraintStart_toEndOf="@+id/P6_IconoLocalizacion"
+        app:layout_constraintTop_toBottomOf="@+id/P6_TextoPrecioValor" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/P6_TextoPrecioValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="aqui va el precio"
         android:textColor="#3F51B5"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintStart_toEndOf="@+id/P6_IconoPrecio"
+        app:layout_constraintTop_toBottomOf="@+id/P6_TextoPrecio" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/P6_TextoPrecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:text="Precio"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintStart_toEndOf="@+id/P6_IconoPrecio"
+        app:layout_constraintTop_toBottomOf="@+id/P6_TextoHoraValor" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/P6_TextoHoraValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="aqui va la hora"
         android:textColor="#3F51B5"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintStart_toEndOf="@+id/P6_IconoHora"
+        app:layout_constraintTop_toBottomOf="@+id/P6_TextoHora" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/P6_TextoHora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:text="Hora"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintStart_toEndOf="@+id/P6_IconoHora"
+        app:layout_constraintTop_toBottomOf="@+id/P6_TextoFechaValor" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/P6_TextoFechaValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="aqui va la fecha"
         android:textColor="#3F51B5"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintStart_toEndOf="@+id/P6_IconoFecha"
+        app:layout_constraintTop_toBottomOf="@+id/P6_TextoFecha" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/P6_TextoFecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:text="Fecha"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintStart_toEndOf="@+id/P6_IconoFecha"
+        app:layout_constraintTop_toBottomOf="@+id/P6_TextoServicioValor" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/P6_TextoServicioValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="aqui va el tratamiento"
         android:textColor="#3F51B5"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintStart_toEndOf="@+id/P6_IconoServicio"
+        app:layout_constraintTop_toBottomOf="@+id/P6_TextoServicio" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/P6_ImagenNegocio"
         android:layout_width="430dp"
         android:layout_height="138dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoAppP2"
+        app:layout_constraintTop_toBottomOf="@+id/logoAppP6"
         app:srcCompat="@drawable/logo_peluqueria" />
 
     <ImageButton
@@ -145,13 +145,13 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#03A9F4"
-        app:layout_constraintEnd_toStartOf="@+id/logoAppP3"
+        app:layout_constraintEnd_toStartOf="@+id/logoAppP6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ImageView
-        android:id="@+id/logoAppP2"
+        android:id="@+id/logoAppP6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -162,7 +162,7 @@
         app:srcCompat="@drawable/citafacillogo" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/P6_TextoNombreServicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -170,76 +170,77 @@
         android:textColor="#3F51B5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/P6_ImagenNegocio" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/P6_ImagenServicio"
         android:layout_width="204dp"
         android:layout_height="147dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/P6_TextoNombreServicio"
         app:srcCompat="@drawable/imagen_tratamiento" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/P6_TextoServicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:text="Servicio"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintStart_toEndOf="@+id/P6_IconoServicio"
+        app:layout_constraintTop_toBottomOf="@+id/P6_ImagenServicio" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/P6_IconoServicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/P6_ImagenServicio"
         app:srcCompat="@drawable/icono_servicio" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/P6_IconoFecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/P6_IconoServicio"
         app:srcCompat="@drawable/calendar_icon" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/P6_IconoHora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/P6_IconoFecha"
         app:srcCompat="@drawable/icono_reloj" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/P6_IconoPrecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/P6_IconoHora"
         app:srcCompat="@drawable/icono_precio" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/P6_IconoLocalizacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/P6_IconoPrecio"
         app:srcCompat="@drawable/location_icon" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
