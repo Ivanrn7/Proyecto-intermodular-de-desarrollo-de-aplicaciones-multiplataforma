@@ -2,7 +2,6 @@
 package com.example.citafacil;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         registro = findViewById(R.id.main_BotonRegistrarse);
         iniciar = findViewById(R.id.main_botonIniciar);
-        invitado = findViewById(R.id.Texto2);
+        invitado = findViewById(R.id.main_BotonInvitado);
 
         // Ir a registro
         registro.setOnClickListener(v -> {
