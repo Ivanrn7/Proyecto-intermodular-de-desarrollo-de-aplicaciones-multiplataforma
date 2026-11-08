@@ -17,7 +17,7 @@ public class InicioSesion extends AppCompatActivity {
     // Componentes de la interfaz
     private EditText P1_TextoCorreo;
     private EditText P1_Contrasena;
-    private ImageButton P1_Atras;
+    private ImageButton P1_BotonAtras;
     private Button P1_BotonIniciar;
     private TextView P1_TextoRegistrar;
 
@@ -31,12 +31,12 @@ public class InicioSesion extends AppCompatActivity {
         // Referencias a los elementos XML
         P1_TextoCorreo = findViewById(R.id.P1_TextoCorreo);
         P1_Contrasena = findViewById(R.id.P1_TextoContrasena);
-        P1_Atras = findViewById(R.id.P1_BotonAtras);
+        P1_BotonAtras = findViewById(R.id.P1_BotonAtras);
         P1_BotonIniciar = findViewById(R.id.P1_BotonIniciar);
         P1_TextoRegistrar = findViewById(R.id.P1_TextoRegistrar);
 
         // Volver a la pantalla anterior
-        P1_Atras.setOnClickListener(v -> finish());
+        P1_BotonAtras.setOnClickListener(v -> finish());
 
         // Iniciar sesión (navegación provisional)
         P1_BotonIniciar.setOnClickListener(v -> {
@@ -75,7 +75,6 @@ public class InicioSesion extends AppCompatActivity {
             intent.putExtra("correo_usuario", correo);
 
             startActivity(intent);
-            finish();
         });
 
         // Ir a crear cuenta
