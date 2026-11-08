@@ -65,7 +65,7 @@ public class NegocioHoraYFecha extends AppCompatActivity {
                 }
 
                 // Opcional: Puedes pasar los datos seleccionados mediante un Intent a la siguiente pantalla
-                Intent intent = new Intent(NegocioHorayFecha.this, ConfirmarCita.class);
+                Intent intent = new Intent(NegocioHoraYFecha.this, ConfirmarCita.class);
                 intent.putExtra("AÑO", anoSeleccionado);
                 intent.putExtra("MES", mesSeleccionado);
                 intent.putExtra("DIA", diaSeleccionado);
