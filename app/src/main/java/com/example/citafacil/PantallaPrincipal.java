@@ -60,7 +60,7 @@ public class PantallaPrincipal extends AppCompatActivity {
         P3_BotonFavoritos = findViewById(R.id.P3_BotonFavoritos);
         P3_BotonUsuario = findViewById(R.id.P3_BotonUsuario);
 
-        // Todas las categorías abren la misma pantalla
+       /* // Todas las categorías abren la misma pantalla
         P3_BotonPeluqueria.setOnClickListener(v ->
                 abrirNegocios("Peluquería"));
 
@@ -84,12 +84,12 @@ public class PantallaPrincipal extends AppCompatActivity {
 
         P3_BotonMas.setOnClickListener(v ->
                 abrirNegocios("Más"));
-
+*/
         // Botón de inicio: ya estamos en la pantalla principal
         P3_BotonHome.setOnClickListener(v -> {
             // No hace falta navegar.
         });
-
+/*
         // Buscador: pendiente de conectar con los negocios
         P3_BotonBuscar.setOnClickListener(v -> {
             String busqueda = P3_TextoBuscar.getText().toString().trim();
@@ -100,15 +100,15 @@ public class PantallaPrincipal extends AppCompatActivity {
                 P3_TextoBuscar.setError("Escribe qué estás buscando");
             }
         });
-    }
-
+    }*/
+/*
     private void abrirNegocios(String categoria) {
         Intent intent = new Intent(
-                PantallaPrincipal.this,
-                NegocioServicios.class
+                PantallaPrincipal.this, NegocioServicios.class
         );
 
         intent.putExtra("categoria", categoria);
         startActivity(intent);
+    }*/
     }
 }

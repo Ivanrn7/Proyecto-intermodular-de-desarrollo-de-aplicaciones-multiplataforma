@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,39 +38,34 @@ public class InicioSesion extends AppCompatActivity {
         // Volver a la pantalla anterior
         P1_Atras.setOnClickListener(v -> finish());
 
-        // Iniciar sesión
+        // Iniciar sesión (navegación provisional)
         P1_BotonIniciar.setOnClickListener(v -> {
 
             String correo = P1_TextoCorreo.getText().toString().trim();
-            String contrasena = P1_Contrasena.getText().toString().trim();
+            String contrasena = P1_Contrasena.getText().toString();
 
-            // Comprobar campos vacíos
+            // Comprobar correo vacío
             if (correo.isEmpty()) {
                 P1_TextoCorreo.setError("Introduce tu correo electrónico");
                 P1_TextoCorreo.requestFocus();
                 return;
             }
 
+            // Comprobar formato del correo
             if (!Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
                 P1_TextoCorreo.setError("Introduce un correo válido");
                 P1_TextoCorreo.requestFocus();
                 return;
             }
 
+            // Comprobar contraseña vacía
             if (contrasena.isEmpty()) {
                 P1_Contrasena.setError("Introduce tu contraseña");
                 P1_Contrasena.requestFocus();
                 return;
             }
 
-            // NAVEGACIÓN PROVISIONAL
-            // Aquí conectaremos la base de datos para verificar
-            // que el usuario y la contraseña sean correctos.
-
-            Toast.makeText(this,
-                    "Datos introducidos correctamente",
-                    Toast.LENGTH_SHORT).show();
-
+            // Entrar en la pantalla principal
             Intent intent = new Intent(
                     InicioSesion.this,
                     PantallaPrincipal.class
@@ -81,6 +75,7 @@ public class InicioSesion extends AppCompatActivity {
             intent.putExtra("correo_usuario", correo);
 
             startActivity(intent);
+            finish();
         });
 
         // Ir a crear cuenta
@@ -89,6 +84,7 @@ public class InicioSesion extends AppCompatActivity {
                     InicioSesion.this,
                     CrearCuenta.class
             );
+
             startActivity(intent);
         });
     }
