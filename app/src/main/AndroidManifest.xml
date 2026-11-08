@@ -25,6 +25,38 @@
             android:exported="false" />
 
         <activity
+            android:name=".NegocioServicios"
+            android:exported="false" />
+
+        <activity
+            android:name=".NegocioHoraYFecha"
+            android:exported="false" />
+
+        <activity
+            android:name=".MisCitas"
+            android:exported="false" />
+
+        <activity
+            android:name=".DetalleCita"
+            android:exported="false" />
+
+        <activity
+            android:name=".ConfirmarCita"
+            android:exported="false" />
+
+        <activity
+            android:name=".CitaConfirmada"
+            android:exported="false" />
+
+        <activity
+            android:name=".CancelarCita"
+            android:exported="false" />
+
+        <activity
+            android:name=".NegocioServicios"
+            android:exported="false" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
@@ -35,6 +67,7 @@
             </intent-filter>
 
         </activity>
+
 
     </application>
 

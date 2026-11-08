@@ -66,7 +66,6 @@ public class NegocioServicios extends AppCompatActivity {
     // Método auxiliar para navegar a la PantallaPrincipal de forma limpia
     private void irAPantallaPrincipal() {
         Intent intent = new Intent(NegocioServicios.this, PantallaPrincipal.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish();
     }
