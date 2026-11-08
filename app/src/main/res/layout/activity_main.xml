@@ -72,12 +72,17 @@
         android:id="@+id/Texto2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
         android:gravity="center"
         android:text="Continuar como invitado"
         android:textColor="@color/design_default_color_primary_variant"
         android:textColorLink="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="647dp" />
+        app:layout_constraintTop_toBottomOf="@+id/main_BotonRegistrarse" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

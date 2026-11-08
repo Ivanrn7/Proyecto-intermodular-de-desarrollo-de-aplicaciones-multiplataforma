@@ -1,20 +1,23 @@
+
 package com.example.citafacil;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.content.Intent;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button registro;
     private Button iniciar;
+    private TextView invitado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,26 +27,32 @@ public class MainActivity extends AppCompatActivity {
 
         registro = findViewById(R.id.main_BotonRegistrarse);
         iniciar = findViewById(R.id.main_botonIniciar);
+        invitado = findViewById(R.id.Texto2);
 
-       registro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CrearCuenta.class);
-                startActivity(intent);
-            }
+        // Ir a registro
+        registro.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CrearCuenta.class);
+            startActivity(intent);
         });
 
-        iniciar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, InicioSesion.class);
-                startActivity(intent);
-            }
+        // Ir a inicio de sesión
+        iniciar.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, InicioSesion.class);
+            startActivity(intent);
         });
 
+        // Entrar como invitado
+        invitado.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, PantallaPrincipal.class);
+            intent.putExtra("modo_invitado", true);
+            startActivity(intent);
+        });
+
+        // Adaptación a los márgenes del sistema
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            v.setPadding(systemBars.left, systemBars.top,
+                    systemBars.right, systemBars.bottom);
             return insets;
         });
     }
