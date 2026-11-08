@@ -27,7 +27,7 @@ public class DetalleCita extends AppCompatActivity {
         btnReprogramar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DetalleCita.this, NegocioHorayFecha.class);
+                Intent intent = new Intent(DetalleCita.this, NegocioHoraYFecha.class);
                 startActivity(intent);
             }
         });
