@@ -5,6 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/p4_BotonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="volver"
+        android:textColor="#03A9F4"
+        android:textColorLink="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#03A9F4"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/p4_BotonAfeitado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Afeitado"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textColorLink="#3F51B5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p4_BotonCorte" />
+
+    <TextView
+        android:id="@+id/p4_BotonCorte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Corte de pelo"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textColorLink="#3F51B5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P4_ImagenNegocio" />
+
     <ImageButton
         android:id="@+id/P4_BotonAtras"
         android:layout_width="wrap_content"
@@ -18,16 +63,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
-    <ListView
-        android:id="@+id/P4_Listado"
-        android:layout_width="409dp"
-        android:layout_height="253dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/P4_ImagenNegocio"
         android:layout_width="449dp"
         android:layout_height="409dp"
         android:layout_marginTop="68dp"
@@ -37,16 +74,16 @@
         app:srcCompat="@drawable/foto_negocio" />
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="420dp"
         android:layout_height="228dp"
-        android:layout_marginBottom="4dp"
         android:background="#BEFFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/P4_Listado"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="246dp">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/P4_TextoNombreNegocio"
             android:layout_width="361dp"
             android:layout_height="66dp"
             android:text="PELUQUERIA ATMOSPHERE"
@@ -59,37 +96,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
         android:text="SERVICIOS"
         android:textColor="#3F51B5"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/P4_Listado"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="435dp" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/P4_TextoInformacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginBottom="16dp"
         android:text="INFORMACION"
         android:textColor="#3F51B5"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/P4_Listado"
-        app:layout_constraintStart_toEndOf="@+id/P4_TextoServicio" />
+        app:layout_constraintStart_toEndOf="@+id/P4_TextoServicio"
+        tools:layout_editor_absoluteY="435dp" />
 
     <TextView
         android:id="@+id/P4_TextoOpciones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
         android:text="OPCIONES"
         android:textColor="#3F51B5"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/P4_Listado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.619"
-        app:layout_constraintStart_toEndOf="@+id/textView16" />
+        app:layout_constraintStart_toEndOf="@+id/P4_TextoInformacion"
+        tools:layout_editor_absoluteY="435dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

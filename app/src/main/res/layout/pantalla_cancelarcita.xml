@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/botonCrearP2"
+        android:id="@+id/P10_BotonCancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -21,7 +21,7 @@
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/botonCrearP3"
+        android:id="@+id/P10_BotonVolver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -36,7 +36,7 @@
         app:strokeWidth="2dp" />
 
     <ImageButton
-        android:id="@+id/p5_BotonAtras"
+        android:id="@+id/P10_BotonAtras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

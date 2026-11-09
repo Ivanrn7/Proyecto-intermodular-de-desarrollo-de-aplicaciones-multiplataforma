@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView35"
+        android:id="@+id/P8_TextoEstadoValor2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -15,19 +15,19 @@
         android:text="Pendiente"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView16"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+        app:layout_constraintStart_toEndOf="@+id/P8_ImagenCita2"
+        app:layout_constraintTop_toBottomOf="@+id/P8_TextoEstado2" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/P8_TextoServicio2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="160dp"
         android:text="Corte de pelo"
         android:textColor="#3F51B5"
-        app:layout_constraintStart_toEndOf="@+id/imageView16"
-        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+        app:layout_constraintStart_toEndOf="@+id/P8_ImagenCita2"
+        app:layout_constraintTop_toBottomOf="@+id/P8_TextoEstadoValor1" />
 
     <Button
         android:id="@+id/P8_BotonDetalles2"
@@ -40,7 +40,7 @@
         android:textColor="#03A9F4"
         android:textColorLink="#03A9F4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/P8_ImagenCita2"
         app:strokeColor="#03A9F4"
         app:strokeWidth="2dp" />
 
@@ -85,33 +85,22 @@
         android:textColor="#03A9F4"
         android:textColorLink="#03A9F4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/P8_ImagenCita1"
         app:strokeColor="#03A9F4"
         app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/P8_BotonCitas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#03A9F4"
-        android:text="Volver a citas"
-        android:textColorLink="#03A9F4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/P8_BotonInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="#FFFFFF"
         android:text="Volver a inicio"
         android:textColor="#03A9F4"
         android:textColorLink="#03A9F4"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="#03A9F4"
         app:strokeWidth="2dp" />
@@ -124,13 +113,13 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#03A9F4"
-        app:layout_constraintEnd_toStartOf="@+id/logoAppP3"
+        app:layout_constraintEnd_toStartOf="@+id/logoAppP8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ImageView
-        android:id="@+id/logoAppP6"
+        android:id="@+id/logoAppP8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -141,7 +130,7 @@
         app:srcCompat="@drawable/citafacillogo" />
 
     <TextView
-        android:id="@+id/textView29"
+        android:id="@+id/P8_TextoTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -152,17 +141,17 @@
         app:layout_constraintTop_toBottomOf="@+id/P8_BotonVolver" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/P8_ImagenCita1"
         android:layout_width="172dp"
         android:layout_height="114dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/P8_TextoTitulo"
         app:srcCompat="@drawable/logo_negocio_pelu" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/P8_ImagenCita2"
         android:layout_width="171dp"
         android:layout_height="163dp"
         android:layout_marginStart="8dp"
@@ -172,38 +161,38 @@
         app:srcCompat="@drawable/foto_negocio" />
 
     <TextView
-        android:id="@+id/textView30"
+        android:id="@+id/P8_TextoServicio1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="56dp"
         android:text="Tratamiento facial"
         android:textColor="#3F51B5"
-        app:layout_constraintStart_toEndOf="@+id/imageView15"
-        app:layout_constraintTop_toBottomOf="@+id/logoAppP6" />
+        app:layout_constraintStart_toEndOf="@+id/P8_ImagenCita1"
+        app:layout_constraintTop_toBottomOf="@+id/logoAppP8" />
 
     <TextView
-        android:id="@+id/textView32"
+        android:id="@+id/P8_TextoEstado1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:text="Estado"
-        app:layout_constraintStart_toEndOf="@+id/imageView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+        app:layout_constraintStart_toEndOf="@+id/P8_ImagenCita1"
+        app:layout_constraintTop_toBottomOf="@+id/P8_TextoServicio1" />
 
     <TextView
-        android:id="@+id/textView34"
+        android:id="@+id/P8_TextoEstado2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:text="Estado"
-        app:layout_constraintStart_toEndOf="@+id/imageView16"
-        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+        app:layout_constraintStart_toEndOf="@+id/P8_ImagenCita2"
+        app:layout_constraintTop_toBottomOf="@+id/P8_TextoServicio2" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/P8_TextoEstadoValor1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -212,7 +201,7 @@
         android:text="Confirmado"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+        app:layout_constraintStart_toEndOf="@+id/P8_ImagenCita1"
+        app:layout_constraintTop_toBottomOf="@+id/P8_TextoEstado1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

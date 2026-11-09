@@ -14,11 +14,47 @@
         android:theme="@style/Theme.CitaFacil">
 
         <activity
+            android:name=".PantallaPrincipal"
+            android:exported="false" />
+
+        <activity
             android:name=".CrearCuenta"
             android:exported="false" />
 
         <activity
             android:name=".InicioSesion"
+            android:exported="false" />
+
+        <activity
+            android:name=".NegocioServicios"
+            android:exported="false" />
+
+        <activity
+            android:name=".NegocioHoraYFecha"
+            android:exported="false" />
+
+        <activity
+            android:name=".MisCitas"
+            android:exported="false" />
+
+        <activity
+            android:name=".DetalleCita"
+            android:exported="false" />
+
+        <activity
+            android:name=".ConfirmarCita"
+            android:exported="false" />
+
+        <activity
+            android:name=".CitaConfirmada"
+            android:exported="false" />
+
+        <activity
+            android:name=".CancelarCita"
+            android:exported="false" />
+
+        <activity
+            android:name=".NegocioServicios"
             android:exported="false" />
 
         <activity
@@ -30,8 +66,8 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+
 
     </application>
 

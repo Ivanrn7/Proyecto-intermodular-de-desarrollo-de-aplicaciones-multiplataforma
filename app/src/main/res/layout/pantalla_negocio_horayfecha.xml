@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/logoAppP"
+        android:id="@+id/logoAppP5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -36,22 +36,22 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#03A9F4"
-        app:layout_constraintEnd_toStartOf="@+id/logoAppP3"
+        app:layout_constraintEnd_toStartOf="@+id/logoAppP5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/P5_ImagenNegocio"
         android:layout_width="430dp"
         android:layout_height="138dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoAppP"
+        app:layout_constraintTop_toBottomOf="@+id/logoAppP5"
         app:srcCompat="@drawable/logo_peluqueria" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/P5_TextoSeleccionFechaHora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -59,7 +59,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/P5_ImagenNegocio" />
 
     <CalendarView
         android:id="@+id/P5_Calendario"
@@ -67,7 +67,7 @@
         android:layout_height="307dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/P5_TextoSeleccionFechaHora" />
 
     <TimePicker
         android:id="@+id/P5_Hora"
@@ -78,5 +78,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/P5_Calendario" />
-</androidx.constraintlayout.widget.ConstraintLayout>
 
+</androidx.constraintlayout.widget.ConstraintLayout>
