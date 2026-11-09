@@ -5,5 +5,6 @@ public record LoginResponse(
         String token,
         String tipo,
         long expiraEn
+         String nombre
 ) {
 }

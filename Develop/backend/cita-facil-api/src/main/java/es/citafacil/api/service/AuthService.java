@@ -45,7 +45,8 @@ public class AuthService {
         return new LoginResponse(
                 token,
                 "Bearer",
-                3600
+                3600,
+                usuario.getNombre()
         );
     }
 }
