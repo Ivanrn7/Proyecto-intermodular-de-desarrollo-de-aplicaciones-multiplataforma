@@ -41,4 +41,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)
+    // Comunicación con la API REST
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+
+// Conversión de respuestas JSON a objetos Java
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 }
