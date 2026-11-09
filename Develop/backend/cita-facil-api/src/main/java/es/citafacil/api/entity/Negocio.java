@@ -12,6 +12,17 @@ import jakarta.persistence.Table;
 
 import java.time.LocalDateTime;
 
+
+/**
+ * Representa un negocio registrado en la aplicación CitaFácil.
+ *
+ * Esta clase es una entidad JPA que representa la tabla
+ * "negocio" de la base de datos.
+ *
+ * Cada negocio contiene información sobre su establecimiento
+ * y está asociado a un usuario propietario.
+ */
+
 @Entity
 @Table(name = "negocio")
 public class Negocio {
@@ -21,6 +32,16 @@ public class Negocio {
     @Column(name = "id_negocio")
     private Long idNegocio;
 
+    /**
+     * Usuario propietario del negocio.
+     *
+     * La relación ManyToOne indica que un usuario
+     * puede tener varios negocios, mientras que cada
+     * negocio pertenece a un único usuario.
+     *
+     * La columna id_usuario almacena el identificador
+     * del usuario propietario.
+     */
     @ManyToOne
     @JoinColumn(name = "id_usuario", nullable = false)
     private Usuario usuario;
@@ -43,6 +64,14 @@ public class Negocio {
     @Column(name = "fecha_registro")
     private LocalDateTime fechaRegistro;
 
+
+
+    /**
+     * Constructor vacío.
+     *
+     * JPA necesita este constructor para crear objetos
+     * Negocio cuando recupera información de la base de datos.
+     */
     public Negocio() {
     }
 
@@ -54,10 +83,12 @@ public class Negocio {
         this.idNegocio = idNegocio;
     }
 
+    /** @return usuario propietario del negocio. */
     public Usuario getUsuario() {
         return usuario;
     }
-
+    
+    /** @param usuario usuario al que pertenece el negocio. */
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }

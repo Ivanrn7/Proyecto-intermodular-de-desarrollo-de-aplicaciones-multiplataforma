@@ -13,3 +13,4 @@ public record ServicioResponse(
         Boolean estado
 ) {
 }
+
